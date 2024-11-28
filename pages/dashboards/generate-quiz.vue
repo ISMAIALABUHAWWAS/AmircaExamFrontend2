@@ -414,7 +414,7 @@ export default {
                 });
 
             } else {
-                await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone', {
+                await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone', {
                     method: 'POST',
                     body: this.filtring
                 }).then(res => {
@@ -462,7 +462,7 @@ export default {
                     if (element === 'Incorrect') {
                         console.log("Incorrect Here");
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -492,7 +492,7 @@ export default {
                         })
                     } if (element === "Omitted") {
                         console.log("Omitted Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -524,7 +524,7 @@ export default {
 
                     } if (element === "correct") {
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -561,7 +561,7 @@ export default {
                     }
                     if (element === "Mark") {
                         console.log("Mark Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -589,7 +589,7 @@ export default {
                         })
                     }
                     if (element === "All") {
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -619,7 +619,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -649,7 +649,7 @@ export default {
                             console.log(err);
                         })
                         console.log("Mark Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -677,7 +677,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -715,7 +715,7 @@ export default {
                 this.systems = [];
                 this.topics = [];
 
-                await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                     method: 'POST',
                     body: this.filtring
                 }).then(res => {
@@ -752,7 +752,7 @@ export default {
                     if (element === 'Incorrect') {
                         console.log("Incorrect Here");
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -781,7 +781,7 @@ export default {
                         })
                     } if (element === "Omitted") {
                         console.log("Omitted Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -811,7 +811,7 @@ export default {
 
                     } if (element === "correct") {
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -844,7 +844,7 @@ export default {
                     }
                     if (element === "Mark") {
                         console.log("Mark Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -874,7 +874,7 @@ export default {
 
                     }
                     if (element === "All") {
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -901,7 +901,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -927,7 +927,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -958,7 +958,7 @@ export default {
                 if (!this.Subjects.length == 0) {
                     this.filtring.subject = this.Subjects,
                         //Return TRUE if the array is empty
-                        await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                        await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                             method: 'POST',
                             body: this.filtring,
                         }).then(res => {
@@ -986,7 +986,7 @@ export default {
                         //Return TRUE if the array is empty
                         delete this.filtring.subject
                     }
-                    await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                    await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                         method: 'POST',
                         body: this.filtring
                     }).then(res => {
@@ -1021,7 +1021,7 @@ export default {
                     if (element === 'Incorrect') {
                         console.log("Incorrect Here");
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1044,7 +1044,7 @@ export default {
 
                     if (element === "Omitted") {
                         console.log("Omitted Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1069,7 +1069,7 @@ export default {
 
                     if (element === "correct") {
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1100,7 +1100,7 @@ export default {
                     }
                     if (element === "Mark") {
                         console.log("Mark Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1130,7 +1130,7 @@ export default {
 
                     }
                     if (element === "All") {
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1153,7 +1153,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1176,7 +1176,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1203,7 +1203,7 @@ export default {
                 if (!this.Systems.length == 0) {
                     this.filtring.systems = this.Systems,
                         //Return TRUE if the array is empty
-                        await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                        await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                             method: 'POST',
                             body: this.filtring,
                         }).then(res => {
@@ -1224,7 +1224,7 @@ export default {
                         //Return TRUE if the array is empty
                         delete this.filtring.systems
                     }
-                    await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                    await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                         method: 'POST',
                         body: this.filtring,
                     }).then(res => {
@@ -1251,7 +1251,7 @@ export default {
                     if (element === 'Incorrect') {
                         console.log("Incorrect Here");
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1273,7 +1273,7 @@ export default {
 
                     } if (element === "Omitted") {
                         console.log("Omitted Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1298,7 +1298,7 @@ export default {
                         })
                     } if (element === "correct") {
                         console.log("correct Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1328,7 +1328,7 @@ export default {
                     }
                     if (element === "Mark") {
                         console.log("Mark Here");
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionmark/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1358,7 +1358,7 @@ export default {
 
                     }
                     if (element === "All") {
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionomitted/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1381,7 +1381,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustioncorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1404,7 +1404,7 @@ export default {
                         }).catch(err => {
                             console.log(err);
                         })
-                        $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
+                        $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user/findQustionincorrect/' + this.getId, {
                             method: 'POST',
                             body: this.filtring
                         }).then(res => {
@@ -1431,7 +1431,7 @@ export default {
                 if (!this.Topics.length == 0) {
                     this.filtring.topic = this.Topics,
                         //Return TRUE if the array is empty
-                        await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                        await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                             method: 'POST',
                             body: this.filtring,
                         }).then(res => {
@@ -1452,7 +1452,7 @@ export default {
                         //Return TRUE if the array is empty
                         delete this.filtring.topic
                     }
-                    await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/question/findone/', {
+                    await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/question/findone/', {
                         method: 'POST',
                         body: this.filtring,
                     }).then(res => {

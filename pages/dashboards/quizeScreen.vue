@@ -955,7 +955,7 @@ export default {
 
             } else {
 
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/types/" + this.getId + "/" + this.typevlue, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/types/" + this.getId + "/" + this.typevlue, {
                     method: "POST",
                 }).then(res => {
                     this.$swal({
@@ -1041,7 +1041,7 @@ export default {
             }
             clearInterval(this.startIntariver1)
             data.push(insatrQuastion)
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/endquize/" + this.getId, {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/endquize/" + this.getId, {
                 method: 'POST',
                 body: data
             }).then(res => {
@@ -1091,7 +1091,7 @@ export default {
                 labelId: this.labelId,
                 Date: today.toLocaleString('en-GB', { timeZone: 'UTC' })
             }
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/note/" + this.getId, {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/note/" + this.getId, {
                 method: 'POST',
                 body: data
             }).then(res => {
@@ -1147,7 +1147,7 @@ export default {
         mark(res) {
 
 
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/matchmark/" + this.getId + "/" + res.id, {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/matchmark/" + this.getId + "/" + res.id, {
                 method: 'PUT',
             }).then(res => {
                 console.log("res");
@@ -1197,7 +1197,7 @@ export default {
 
 
 
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/flashCard/" + this.getId, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/flashCard/" + this.getId, {
                     method: 'POST',
                     body: data
                 }).then(res => {
@@ -1263,7 +1263,7 @@ export default {
             // Corect ///////////////////////////////////////////////////////////////
             if (res.answer1 === this.corectAnswer12) {
                 this.correctAnswer++
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/matchcorrect/" + this.getId + "/" + res.id, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/matchcorrect/" + this.getId + "/" + res.id, {
                     method: 'PUT',
                 }).then(res => {
                     console.log("res");
@@ -1294,7 +1294,7 @@ export default {
                 res.omitted = true
                 this.omitedte++
                 this.corectAnswer12 = res.answer1
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/matchomitted/" + this.getId + "/" + res.id, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/matchomitted/" + this.getId + "/" + res.id, {
                     method: 'PUT',
 
                 }).then(res => {
@@ -1326,7 +1326,7 @@ export default {
                 this.incorrectAnswer++
                 this.corectAnswer12 = res.answer1
                 res.togeleexplanation = true
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/match/" + this.getId + "/" + res.id, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/match/" + this.getId + "/" + res.id, {
                     method: 'PUT',
 
                 }).then(res => {

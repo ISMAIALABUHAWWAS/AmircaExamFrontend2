@@ -236,7 +236,7 @@ export default {
             var phone = document.getElementById('phone').value
 
 
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/" + id, {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/" + id, {
                 method: "PUT",
                 body: {
                     name: name,
@@ -260,7 +260,7 @@ export default {
         },
 
         delete1(data) {
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/" + data, {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/" + data, {
                 method: "DELETE",
             }).then(res => {
                 this.$swal({
@@ -287,7 +287,7 @@ export default {
                 buttonsStyling: false,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/deletecours/" + this.id + "/" + data, {
+                    $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/deletecours/" + this.id + "/" + data, {
                         method: 'PUT',
                     }).then(res => {
                         this.$swal({

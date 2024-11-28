@@ -128,7 +128,7 @@ const store = createStore({
             commit("SET_MENU", payload);
         },
         SetCourses: ({ commit }) => {
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/courses", {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/courses", {
                 method: "GET",
             })
                 .then((res) => {
@@ -142,7 +142,7 @@ const store = createStore({
 
         SetFlashcard: ({ commit, state }) => {
             $fetch(
-                "https://walrus-app-b8h5f.ondigitalocean.app/api/user/flashcard/" +
+                "https://starfish-app-bd3fy.ondigitalocean.app/api/user/flashcard/" +
                     state.id,
                 {
                     method: "GET",
@@ -158,7 +158,7 @@ const store = createStore({
         },
         SetTypes: ({ commit, state }) => {
             $fetch(
-                "https://walrus-app-b8h5f.ondigitalocean.app/api/user/typesget/" +
+                "https://starfish-app-bd3fy.ondigitalocean.app/api/user/typesget/" +
                     state.id,
                 {
                     method: "GET",
@@ -173,7 +173,7 @@ const store = createStore({
                 });
         },
         SetOrder: ({ commit }) => {
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/order", {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/order", {
                 method: "GET",
             })
                 .then((res) => {
@@ -187,7 +187,7 @@ const store = createStore({
 
         SetNotes: ({ commit, state }) => {
             $fetch(
-                "https://walrus-app-b8h5f.ondigitalocean.app/api/user/note/" +
+                "https://starfish-app-bd3fy.ondigitalocean.app/api/user/note/" +
                     state.id,
                 {
                     method: "GET",
@@ -203,7 +203,7 @@ const store = createStore({
         },
 
         SetUser: ({ commit }) => {
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user", {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user", {
                 method: "GET",
             })
                 .then((res) => {
@@ -216,7 +216,7 @@ const store = createStore({
         },
         SetUserCourses: ({ commit, state }) => {
             $fetch(
-                "https://walrus-app-b8h5f.ondigitalocean.app/api/user/getcourses/" +
+                "https://starfish-app-bd3fy.ondigitalocean.app/api/user/getcourses/" +
                     state.id,
                 {
                     method: "GET",
@@ -232,7 +232,7 @@ const store = createStore({
         },
 
         SetQuize: ({ commit }) => {
-            $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/question", {
+            $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/question", {
                 method: "GET",
             })
                 .then((res) => {
@@ -246,7 +246,7 @@ const store = createStore({
 
         SetPreviousQuize: ({ commit, state }) => {
             $fetch(
-                "https://walrus-app-b8h5f.ondigitalocean.app/api/user/myquizes/" +
+                "https://starfish-app-bd3fy.ondigitalocean.app/api/user/myquizes/" +
                     state.id,
                 {
                     method: "GET",

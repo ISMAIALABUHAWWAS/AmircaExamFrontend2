@@ -198,29 +198,29 @@ export default {
 
         async checkedifUserexist() {
             if (!this.userInfo.email == "") {
-                await $fetch(`https://walrus-app-b8h5f.ondigitalocean.app/api/user/checkifexist/${this.userInfo.email}`, {
-                    method: 'GET',
-                }).then(res => {
-                    if (res == "not founded") {
-                        this.reqstration(res)
-                    } else {
-                        this.$swal({
-                            title: "The user exists ",
-                        });
-                    }
-                }).catch(error => {
-                    console.log(error)
-                })
+          await $fetch(`https://starfish-app-bd3fy.ondigitalocean.app/api/user/checkifexist/${this.userInfo.email}`, {
+            method: 'GET',
+          }).then(res => {
+            if (res == "not founded") {
+              this.reqstration(res)
             } else {
-                this.$swal({
-                    title: `EMPTY`,
-                });
+              this.$swal({
+                title: "The user exists ",
+              });
             }
-        },
+          }).catch(error => {
+            console.log(error)
+          })
+        } else {
+          this.$swal({
+            title: `EMPTY`,
+          });
+        }
+      },
 
 
-        async reqstration(res) {
-            await $fetch('https://walrus-app-b8h5f.ondigitalocean.app/api/user', {
+      async reqstration(res) {
+        await $fetch('https://starfish-app-bd3fy.ondigitalocean.app/api/user', {
                 method: 'POST',
                 body: this.userInfo
             }).then(res => {

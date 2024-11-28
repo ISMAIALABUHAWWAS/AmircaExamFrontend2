@@ -243,7 +243,7 @@ export default {
                 buttonsStyling: false,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/deleteType/" + this.getId + "/" + type, {
+                    $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/deleteType/" + this.getId + "/" + type, {
                         method: 'PUT',
                     }).then(res => {
                         this.$swal({
@@ -313,7 +313,7 @@ export default {
 
             } else {
 
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/flashCard/" + this.getId, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/flashCard/" + this.getId, {
                     method: 'POST',
                     body: data
                 }).then(res => {
@@ -352,7 +352,7 @@ export default {
 
             } else {
 
-                $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/types/" + this.getId + "/" + this.typevlue, {
+                $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/types/" + this.getId + "/" + this.typevlue, {
                     method: "POST",
                 }).then(res => {
                     this.$swal({
@@ -385,7 +385,7 @@ export default {
                 buttonsStyling: false,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    $fetch("https://walrus-app-b8h5f.ondigitalocean.app/api/user/flashcard2/" + this.getId + "/" + data.unqie, {
+                    $fetch("https://starfish-app-bd3fy.ondigitalocean.app/api/user/flashcard2/" + this.getId + "/" + data.unqie, {
                         method: 'PUT',
                     }).then(res => {
                         this.$swal({

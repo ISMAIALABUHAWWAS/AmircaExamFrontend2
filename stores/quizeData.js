@@ -28,7 +28,7 @@ export const getters = {
 export const actions = {
     async fetchMenu({ commit }) {
         const response = await this.$axios.get(
-            "https://walrus-app-b8h5f.ondigitalocean.app/api/items"
+            "https://starfish-app-bd3fy.ondigitalocean.app/api/items"
         );
         commit("SET_MENU", response.data);
         return response;
